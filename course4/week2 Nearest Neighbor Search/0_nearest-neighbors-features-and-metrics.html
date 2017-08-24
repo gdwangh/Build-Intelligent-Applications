@@ -235,7 +235,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">graphlab</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">graphlab</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
@@ -246,28 +246,6 @@ div#notebook {
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>[INFO] graphlab.cython.cy_server: GraphLab Create v2.1 started. Logging: /tmp/graphlab_server_1485968612.log
-INFO:graphlab.cython.cy_server:GraphLab Create v2.1 started. Logging: /tmp/graphlab_server_1485968612.log
-</pre>
-</div>
-</div>
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>This non-commercial license of GraphLab Create for academic use is assigned to gdwangh@189.cn and will expire on February 23, 2017.
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -296,10 +274,31 @@ INFO:graphlab.cython.cy_server:GraphLab Create v2.1 started. Logging: /tmp/graph
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">wiki</span> <span class="o">=</span> <span class="n">graphlab</span><span class="o">.</span><span class="n">SFrame</span><span class="p">(</span><span class="s1">&#39;people_wiki.gl&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">wiki</span> <span class="o">=</span> <span class="n">graphlab</span><span class="o">.</span><span class="n">SFrame</span><span class="p">(</span><span class="s1">&#39;people_wiki.gl&#39;</span><span class="p">)</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>This non-commercial license of GraphLab Create for academic use is assigned to gdwangh@189.cn and will expire on August 23, 2018.
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>[INFO] graphlab.cython.cy_server: GraphLab Create v2.1 started. Logging: C:\Users\wh\AppData\Local\Temp\graphlab_server_1503587323.log.0
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -309,7 +308,7 @@ INFO:graphlab.cython.cy_server:GraphLab Create v2.1 started. Logging: /tmp/graph
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">wiki</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">wiki</span>
 </pre></div>
 
 </div>
@@ -414,7 +413,7 @@ INFO:graphlab.cython.cy_server:GraphLab Create v2.1 started. Logging: /tmp/graph
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;word_count&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">graphlab</span><span class="o">.</span><span class="n">text_analytics</span><span class="o">.</span><span class="n">count_words</span><span class="p">(</span><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">])</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;word_count&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">graphlab</span><span class="o">.</span><span class="n">text_analytics</span><span class="o">.</span><span class="n">count_words</span><span class="p">(</span><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">])</span>
 </pre></div>
 
 </div>
@@ -427,7 +426,7 @@ INFO:graphlab.cython.cy_server:GraphLab Create v2.1 started. Logging: /tmp/graph
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">wiki</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">wiki</span>
 </pre></div>
 
 </div>
@@ -452,61 +451,61 @@ INFO:graphlab.cython.cy_server:GraphLab Create v2.1 started. Logging: /tmp/graph
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">&lt;http://dbpedia.org/resou<br>rce/Digby_Morrell&gt; ...</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">Digby Morrell</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">digby morrell born 10<br>october 1979 is a former ...</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">{'selection': 1,<br>'carltons': 1, 'being': ...</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">{'since': 1L, 'carltons':<br>1L, 'being': 1L, '2005': ...</td>
     </tr>
     <tr>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">&lt;http://dbpedia.org/resou<br>rce/Alfred_J._Lewy&gt; ...</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">Alfred J. Lewy</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">alfred j lewy aka sandy<br>lewy graduated from ...</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">{'precise': 1, 'thomas':<br>1, 'closely': 1, ...</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">{'precise': 1L, 'thomas':<br>1L, 'closely': 1L, ...</td>
     </tr>
     <tr>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">&lt;http://dbpedia.org/resou<br>rce/Harpdog_Brown&gt; ...</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">Harpdog Brown</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">harpdog brown is a singer<br>and harmonica player who ...</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">{'just': 1, 'issued': 1,<br>'mainly': 1, 'nominat ...</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">{'just': 1L, 'issued':<br>1L, 'mainly': 1L, ...</td>
     </tr>
     <tr>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">&lt;http://dbpedia.org/resou<br>rce/Franz_Rottensteiner&gt; ...</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">Franz Rottensteiner</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">franz rottensteiner born<br>in waidmannsfeld lower ...</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">{'all': 1,<br>'bauforschung': 1, ...</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">{'all': 1L,<br>'bauforschung': 1L, ...</td>
     </tr>
     <tr>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">&lt;http://dbpedia.org/resou<br>rce/G-Enka&gt; ...</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">G-Enka</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">henry krvits born 30<br>december 1974 in tallinn ...</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">{'they': 1,<br>'gangstergenka': 1, ...</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">{'legendary': 1L,<br>'gangstergenka': 1L, ...</td>
     </tr>
     <tr>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">&lt;http://dbpedia.org/resou<br>rce/Sam_Henderson&gt; ...</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">Sam Henderson</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">sam henderson born<br>october 18 1969 is an ...</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">{'currently': 1, 'less':<br>1, 'being': 1, ...</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">{'now': 1L, 'currently':<br>1L, 'less': 1L, 'being': ...</td>
     </tr>
     <tr>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">&lt;http://dbpedia.org/resou<br>rce/Aaron_LaCrate&gt; ...</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">Aaron LaCrate</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">aaron lacrate is an<br>american music producer ...</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">{'exclusive': 2,<br>'producer': 1, 'show' ...</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">{'exclusive': 2L,<br>'producer': 1L, 'tribe': ...</td>
     </tr>
     <tr>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">&lt;http://dbpedia.org/resou<br>rce/Trevor_Ferguson&gt; ...</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">Trevor Ferguson</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">trevor ferguson aka john<br>farrow born 11 november ...</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">{'taxi': 1, 'salon': 1,<br>'gangs': 1, 'being': 1, ...</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">{'taxi': 1L, 'salon': 1L,<br>'gangs': 1L, 'being': ...</td>
     </tr>
     <tr>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">&lt;http://dbpedia.org/resou<br>rce/Grant_Nelson&gt; ...</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">Grant Nelson</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">grant nelson born 27<br>april 1971 in london  ...</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">{'houston': 1, 'frankie':<br>1, 'labels': 1, ...</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">{'houston': 1L,<br>'frankie': 1L, 'labels': ...</td>
     </tr>
     <tr>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">&lt;http://dbpedia.org/resou<br>rce/Cathy_Caruth&gt; ...</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">Cathy Caruth</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">cathy caruth born 1955 is<br>frank h t rhodes ...</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">{'phenomenon': 1,<br>'deborash': 1, 'both' ...</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">{'phenomenon': 1L,<br>'deborash': 1L, ...</td>
     </tr>
 </table>
 [59071 rows x 4 columns]<br/>Note: Only the head of the SFrame is printed.<br/>You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns.
@@ -543,7 +542,7 @@ INFO:graphlab.cython.cy_server:GraphLab Create v2.1 started. Logging: /tmp/graph
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">model</span> <span class="o">=</span> <span class="n">graphlab</span><span class="o">.</span><span class="n">nearest_neighbors</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">wiki</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="n">features</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;word_count&#39;</span><span class="p">],</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">graphlab</span><span class="o">.</span><span class="n">nearest_neighbors</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">wiki</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="n">features</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;word_count&#39;</span><span class="p">],</span>
                                           <span class="n">method</span><span class="o">=</span><span class="s1">&#39;brute_force&#39;</span><span class="p">,</span> <span class="n">distance</span><span class="o">=</span><span class="s1">&#39;euclidean&#39;</span><span class="p">)</span>
 </pre></div>
 
@@ -582,7 +581,7 @@ INFO:graphlab.cython.cy_server:GraphLab Create v2.1 started. Logging: /tmp/graph
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">model</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">wiki</span><span class="p">[</span><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Barack Obama&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">wiki</span><span class="p">[</span><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Barack Obama&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -628,7 +627,7 @@ INFO:graphlab.cython.cy_server:GraphLab Create v2.1 started. Logging: /tmp/graph
 <div class="output_area"><div class="prompt"></div>
 
 <div class="output_html rendered_html output_subarea ">
-<pre>| 0            | 1       | 0.00169288  | 12.013ms     |</pre>
+<pre>| 0            | 1       | 0.00169288  | 10.008ms     |</pre>
 </div>
 
 </div>
@@ -636,7 +635,7 @@ INFO:graphlab.cython.cy_server:GraphLab Create v2.1 started. Logging: /tmp/graph
 <div class="output_area"><div class="prompt"></div>
 
 <div class="output_html rendered_html output_subarea ">
-<pre>| Done         |         | 100         | 894.765ms    |</pre>
+<pre>| Done         |         | 100         | 372.249ms    |</pre>
 </div>
 
 </div>
@@ -753,7 +752,7 @@ INFO:graphlab.cython.cy_server:GraphLab Create v2.1 started. Logging: /tmp/graph
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">top_words</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">top_words</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Get a table of the most frequent words in the given person&#39;s wikipedia page.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -772,7 +771,7 @@ INFO:graphlab.cython.cy_server:GraphLab Create v2.1 started. Logging: /tmp/graph
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">obama_words</span> <span class="o">=</span> <span class="n">top_words</span><span class="p">(</span><span class="s1">&#39;Barack Obama&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">obama_words</span> <span class="o">=</span> <span class="n">top_words</span><span class="p">(</span><span class="s1">&#39;Barack Obama&#39;</span><span class="p">)</span>
 <span class="n">obama_words</span>
 </pre></div>
 
@@ -825,11 +824,11 @@ INFO:graphlab.cython.cy_server:GraphLab Create v2.1 started. Logging: /tmp/graph
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">8</td>
     </tr>
     <tr>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">he</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">a</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">7</td>
     </tr>
     <tr>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">a</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">he</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">7</td>
     </tr>
 </table>
@@ -848,7 +847,7 @@ INFO:graphlab.cython.cy_server:GraphLab Create v2.1 started. Logging: /tmp/graph
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">barrio_words</span> <span class="o">=</span> <span class="n">top_words</span><span class="p">(</span><span class="s1">&#39;Francisco Barrio&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">barrio_words</span> <span class="o">=</span> <span class="n">top_words</span><span class="p">(</span><span class="s1">&#39;Francisco Barrio&#39;</span><span class="p">)</span>
 <span class="n">barrio_words</span>
 </pre></div>
 
@@ -897,11 +896,11 @@ INFO:graphlab.cython.cy_server:GraphLab Create v2.1 started. Logging: /tmp/graph
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">7</td>
     </tr>
     <tr>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">governor</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">a</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">6</td>
     </tr>
     <tr>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">a</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">governor</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">6</td>
     </tr>
     <tr>
@@ -938,7 +937,7 @@ INFO:graphlab.cython.cy_server:GraphLab Create v2.1 started. Logging: /tmp/graph
 <div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">combined_words</span> <span class="o">=</span> <span class="n">obama_words</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">barrio_words</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;word&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">combined_words</span> <span class="o">=</span> <span class="n">obama_words</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">barrio_words</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;word&#39;</span><span class="p">)</span>
 <span class="n">combined_words</span>
 </pre></div>
 
@@ -990,14 +989,14 @@ INFO:graphlab.cython.cy_server:GraphLab Create v2.1 started. Logging: /tmp/graph
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">5</td>
     </tr>
     <tr>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">he</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">7</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">10</td>
-    </tr>
-    <tr>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">a</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">7</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">6</td>
+    </tr>
+    <tr>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">he</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">7</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">10</td>
     </tr>
     <tr>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">as</td>
@@ -1035,7 +1034,7 @@ INFO:graphlab.cython.cy_server:GraphLab Create v2.1 started. Logging: /tmp/graph
 <div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">combined_words</span> <span class="o">=</span> <span class="n">combined_words</span><span class="o">.</span><span class="n">rename</span><span class="p">({</span><span class="s1">&#39;count&#39;</span><span class="p">:</span><span class="s1">&#39;Obama&#39;</span><span class="p">,</span> <span class="s1">&#39;count.1&#39;</span><span class="p">:</span><span class="s1">&#39;Barrio&#39;</span><span class="p">})</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">combined_words</span> <span class="o">=</span> <span class="n">combined_words</span><span class="o">.</span><span class="n">rename</span><span class="p">({</span><span class="s1">&#39;count&#39;</span><span class="p">:</span><span class="s1">&#39;Obama&#39;</span><span class="p">,</span> <span class="s1">&#39;count.1&#39;</span><span class="p">:</span><span class="s1">&#39;Barrio&#39;</span><span class="p">})</span>
 <span class="n">combined_words</span>
 </pre></div>
 
@@ -1087,14 +1086,14 @@ INFO:graphlab.cython.cy_server:GraphLab Create v2.1 started. Logging: /tmp/graph
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">5</td>
     </tr>
     <tr>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">he</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">7</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">10</td>
-    </tr>
-    <tr>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">a</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">7</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">6</td>
+    </tr>
+    <tr>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">he</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">7</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">10</td>
     </tr>
     <tr>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">as</td>
@@ -1132,7 +1131,7 @@ INFO:graphlab.cython.cy_server:GraphLab Create v2.1 started. Logging: /tmp/graph
 <div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">combined_words</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s1">&#39;Obama&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">combined_words</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s1">&#39;Obama&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1183,14 +1182,14 @@ INFO:graphlab.cython.cy_server:GraphLab Create v2.1 started. Logging: /tmp/graph
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">5</td>
     </tr>
     <tr>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">he</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">7</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">10</td>
-    </tr>
-    <tr>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">a</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">7</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">6</td>
+    </tr>
+    <tr>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">he</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">7</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">10</td>
     </tr>
     <tr>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">as</td>
@@ -1243,7 +1242,7 @@ where <code>common_words</code> is a Python list. See <a href="https://docs.pyth
 <div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c1"># common_words = ...  # YOUR CODE HERE</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># common_words = ...  # YOUR CODE HERE</span>
 <span class="n">common_words</span> <span class="o">=</span><span class="nb">set</span><span class="p">(</span><span class="n">combined_words</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">][</span><span class="s1">&#39;word&#39;</span><span class="p">])</span>
 
 <span class="k">def</span> <span class="nf">has_top_words</span><span class="p">(</span><span class="n">word_count_vector</span><span class="p">):</span>
@@ -1272,7 +1271,7 @@ where <code>common_words</code> is a Python list. See <a href="https://docs.pyth
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>56066</pre>
+<pre>56066L</pre>
 </div>
 
 </div>
@@ -1296,7 +1295,7 @@ where <code>common_words</code> is a Python list. See <a href="https://docs.pyth
 <div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="s1">&#39;Output from your function:&#39;</span><span class="p">,</span> <span class="n">has_top_words</span><span class="p">(</span><span class="n">wiki</span><span class="p">[</span><span class="mi">32</span><span class="p">][</span><span class="s1">&#39;word_count&#39;</span><span class="p">])</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="s1">&#39;Output from your function:&#39;</span><span class="p">,</span> <span class="n">has_top_words</span><span class="p">(</span><span class="n">wiki</span><span class="p">[</span><span class="mi">32</span><span class="p">][</span><span class="s1">&#39;word_count&#39;</span><span class="p">])</span>
 <span class="k">print</span> <span class="s1">&#39;Correct output: True&#39;</span>
 <span class="k">print</span> <span class="s1">&#39;Also check the length of unique_words. It should be 167&#39;</span>
 </pre></div>
@@ -1327,7 +1326,7 @@ Also check the length of unique_words. It should be 167
 <div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="s1">&#39;Output from your function:&#39;</span><span class="p">,</span> <span class="n">has_top_words</span><span class="p">(</span><span class="n">wiki</span><span class="p">[</span><span class="mi">33</span><span class="p">][</span><span class="s1">&#39;word_count&#39;</span><span class="p">])</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="s1">&#39;Output from your function:&#39;</span><span class="p">,</span> <span class="n">has_top_words</span><span class="p">(</span><span class="n">wiki</span><span class="p">[</span><span class="mi">33</span><span class="p">][</span><span class="s1">&#39;word_count&#39;</span><span class="p">])</span>
 <span class="k">print</span> <span class="s1">&#39;Correct output: False&#39;</span>
 <span class="k">print</span> <span class="s1">&#39;Also check the length of unique_words. It should be 188&#39;</span>
 </pre></div>
@@ -1369,7 +1368,7 @@ Also check the length of unique_words. It should be 188
 <div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">row1</span> <span class="o">=</span> <span class="n">wiki</span><span class="p">[</span><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Barack Obama&#39;</span><span class="p">][</span><span class="s1">&#39;word_count&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">row1</span> <span class="o">=</span> <span class="n">wiki</span><span class="p">[</span><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Barack Obama&#39;</span><span class="p">][</span><span class="s1">&#39;word_count&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">row2</span> <span class="o">=</span> <span class="n">wiki</span><span class="p">[</span><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;George W. Bush&#39;</span><span class="p">][</span><span class="s1">&#39;word_count&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">row3</span> <span class="o">=</span> <span class="n">wiki</span><span class="p">[</span><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Joe Biden&#39;</span><span class="p">][</span><span class="s1">&#39;word_count&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
 
@@ -1414,11 +1413,10 @@ Also check the length of unique_words. It should be 188
 <div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">obama_words</span> <span class="o">=</span> <span class="n">top_words</span><span class="p">(</span><span class="s1">&#39;Barack Obama&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">obama_words</span> <span class="o">=</span> <span class="n">top_words</span><span class="p">(</span><span class="s1">&#39;Barack Obama&#39;</span><span class="p">)</span>
 <span class="n">george_words</span> <span class="o">=</span> <span class="n">top_words</span><span class="p">(</span><span class="s1">&#39;George W. Bush&#39;</span><span class="p">)</span>
-<span class="n">combined_words</span> <span class="o">=</span> <span class="n">obama_words</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">george_words</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;word&#39;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">)</span>
-<span class="n">outOf_words</span> <span class="o">=</span> <span class="n">combined_words</span><span class="p">[</span><span class="n">combined_words</span><span class="p">[</span><span class="s1">&#39;count.1&#39;</span><span class="p">]</span><span class="o">==</span><span class="bp">None</span><span class="p">]</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s1">&#39;count&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
-<span class="n">outOf_words</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
+<span class="n">combined_words</span> <span class="o">=</span> <span class="n">obama_words</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">george_words</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;word&#39;</span><span class="p">)</span>
+<span class="n">combined_words</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s1">&#39;count&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)[</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -1439,54 +1437,54 @@ Also check the length of unique_words. It should be 188
         <th style="padding-left: 1em; padding-right: 1em; text-align: center">count.1</th>
     </tr>
     <tr>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">obama</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">9</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">None</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">the</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">40</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">39</td>
     </tr>
     <tr>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">us</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">in</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">30</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">22</td>
+    </tr>
+    <tr>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">and</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">21</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">14</td>
+    </tr>
+    <tr>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">of</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">18</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">14</td>
+    </tr>
+    <tr>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">to</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">14</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">11</td>
+    </tr>
+    <tr>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">his</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">11</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">6</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">None</td>
     </tr>
     <tr>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">2011</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">act</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">8</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">3</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">None</td>
     </tr>
     <tr>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">involvement</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">3</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">None</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">he</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">7</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">8</td>
     </tr>
     <tr>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">january</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">3</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">None</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">a</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">7</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">6</td>
     </tr>
     <tr>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">ordered</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">3</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">None</td>
-    </tr>
-    <tr>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">senate</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">3</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">None</td>
-    </tr>
-    <tr>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">primary</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">2</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">None</td>
-    </tr>
-    <tr>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">policy</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">2</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">None</td>
-    </tr>
-    <tr>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">november</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">2</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">None</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">as</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">6</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">6</td>
     </tr>
 </table>
 [10 rows x 3 columns]<br/>
@@ -1534,7 +1532,7 @@ Also check the length of unique_words. It should be 188
 <div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;tf_idf&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">graphlab</span><span class="o">.</span><span class="n">text_analytics</span><span class="o">.</span><span class="n">tf_idf</span><span class="p">(</span><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;word_count&#39;</span><span class="p">])</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;tf_idf&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">graphlab</span><span class="o">.</span><span class="n">text_analytics</span><span class="o">.</span><span class="n">tf_idf</span><span class="p">(</span><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;word_count&#39;</span><span class="p">])</span>
 </pre></div>
 
 </div>
@@ -1547,7 +1545,7 @@ Also check the length of unique_words. It should be 188
 <div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">model_tf_idf</span> <span class="o">=</span> <span class="n">graphlab</span><span class="o">.</span><span class="n">nearest_neighbors</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">wiki</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="n">features</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;tf_idf&#39;</span><span class="p">],</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">model_tf_idf</span> <span class="o">=</span> <span class="n">graphlab</span><span class="o">.</span><span class="n">nearest_neighbors</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">wiki</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="n">features</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;tf_idf&#39;</span><span class="p">],</span>
                                                  <span class="n">method</span><span class="o">=</span><span class="s1">&#39;brute_force&#39;</span><span class="p">,</span> <span class="n">distance</span><span class="o">=</span><span class="s1">&#39;euclidean&#39;</span><span class="p">)</span>
 </pre></div>
 
@@ -1576,7 +1574,7 @@ Also check the length of unique_words. It should be 188
 <div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">model_tf_idf</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">wiki</span><span class="p">[</span><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Barack Obama&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">model_tf_idf</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">wiki</span><span class="p">[</span><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Barack Obama&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1622,7 +1620,7 @@ Also check the length of unique_words. It should be 188
 <div class="output_area"><div class="prompt"></div>
 
 <div class="output_html rendered_html output_subarea ">
-<pre>| 0            | 1       | 0.00169288  | 33.808ms     |</pre>
+<pre>| 0            | 1       | 0.00169288  | 15.01ms      |</pre>
 </div>
 
 </div>
@@ -1630,15 +1628,7 @@ Also check the length of unique_words. It should be 188
 <div class="output_area"><div class="prompt"></div>
 
 <div class="output_html rendered_html output_subarea ">
-<pre>| 0            | 44545   | 75.4093     | 1.03s        |</pre>
-</div>
-
-</div>
-
-<div class="output_area"><div class="prompt"></div>
-
-<div class="output_html rendered_html output_subarea ">
-<pre>| Done         |         | 100         | 1.35s        |</pre>
+<pre>| Done         |         | 100         | 376.25ms     |</pre>
 </div>
 
 </div>
@@ -1752,7 +1742,7 @@ Also check the length of unique_words. It should be 188
 <div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">top_words_tf_idf</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">top_words_tf_idf</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="n">row</span> <span class="o">=</span> <span class="n">wiki</span><span class="p">[</span><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">name</span><span class="p">]</span>
     <span class="n">word_count_table</span> <span class="o">=</span> <span class="n">row</span><span class="p">[[</span><span class="s1">&#39;tf_idf&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">stack</span><span class="p">(</span><span class="s1">&#39;tf_idf&#39;</span><span class="p">,</span> <span class="n">new_column_name</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;word&#39;</span><span class="p">,</span><span class="s1">&#39;weight&#39;</span><span class="p">])</span>
     <span class="k">return</span> <span class="n">word_count_table</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s1">&#39;weight&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
@@ -1768,7 +1758,7 @@ Also check the length of unique_words. It should be 188
 <div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">obama_tf_idf</span> <span class="o">=</span> <span class="n">top_words_tf_idf</span><span class="p">(</span><span class="s1">&#39;Barack Obama&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">obama_tf_idf</span> <span class="o">=</span> <span class="n">top_words_tf_idf</span><span class="p">(</span><span class="s1">&#39;Barack Obama&#39;</span><span class="p">)</span>
 <span class="n">obama_tf_idf</span>
 </pre></div>
 
@@ -1844,7 +1834,7 @@ Also check the length of unique_words. It should be 188
 <div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">schiliro_tf_idf</span> <span class="o">=</span> <span class="n">top_words_tf_idf</span><span class="p">(</span><span class="s1">&#39;Phil Schiliro&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">schiliro_tf_idf</span> <span class="o">=</span> <span class="n">top_words_tf_idf</span><span class="p">(</span><span class="s1">&#39;Phil Schiliro&#39;</span><span class="p">)</span>
 <span class="n">schiliro_tf_idf</span>
 </pre></div>
 
@@ -1930,7 +1920,7 @@ Also check the length of unique_words. It should be 188
 <div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">common_word_tfidf</span> <span class="o">=</span> <span class="n">obama_tf_idf</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">schiliro_tf_idf</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;word&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">common_word_tfidf</span> <span class="o">=</span> <span class="n">obama_tf_idf</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">schiliro_tf_idf</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;word&#39;</span><span class="p">)</span>
 <span class="n">common_word_tfidf</span><span class="o">.</span><span class="n">rename</span><span class="p">({</span><span class="s1">&#39;weight&#39;</span><span class="p">:</span><span class="s1">&#39;Obama&#39;</span><span class="p">,</span> <span class="s1">&#39;weight.1&#39;</span><span class="p">:</span><span class="s1">&#39;Schiliro&#39;</span><span class="p">})</span>
 <span class="n">common_word_tfidf</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s1">&#39;Obama&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
 </pre></div>
@@ -2038,7 +2028,7 @@ Also check the length of unique_words. It should be 188
 <div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">common_words</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">common_word_tfidf</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">][</span><span class="s1">&#39;word&#39;</span><span class="p">])</span>  <span class="c1"># YOUR CODE HERE</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">common_words</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">common_word_tfidf</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">][</span><span class="s1">&#39;word&#39;</span><span class="p">])</span>  <span class="c1"># YOUR CODE HERE</span>
 
 <span class="k">def</span> <span class="nf">has_top_words</span><span class="p">(</span><span class="n">word_count_vector</span><span class="p">):</span>
     <span class="c1"># extract the keys of word_count_vector and convert it to a set</span>
@@ -2066,7 +2056,7 @@ Also check the length of unique_words. It should be 188
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>14</pre>
+<pre>14L</pre>
 </div>
 
 </div>
@@ -2119,7 +2109,7 @@ Also check the length of unique_words. It should be 188
 <div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">obama_row</span> <span class="o">=</span> <span class="n">wiki</span><span class="p">[</span><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Barack Obama&#39;</span><span class="p">][</span><span class="s1">&#39;tf_idf&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">obama_row</span> <span class="o">=</span> <span class="n">wiki</span><span class="p">[</span><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Barack Obama&#39;</span><span class="p">][</span><span class="s1">&#39;tf_idf&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">biden_row</span> <span class="o">=</span> <span class="n">wiki</span><span class="p">[</span><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Joe Biden&#39;</span><span class="p">][</span><span class="s1">&#39;tf_idf&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
 
 <span class="n">graphlab</span><span class="o">.</span><span class="n">toolkits</span><span class="o">.</span><span class="n">distances</span><span class="o">.</span><span class="n">euclidean</span><span class="p">(</span><span class="n">obama_row</span><span class="p">,</span> <span class="n">biden_row</span><span class="p">)</span>
@@ -2161,7 +2151,7 @@ Also check the length of unique_words. It should be 188
 <div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">model_tf_idf</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">wiki</span><span class="p">[</span><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Barack Obama&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">model_tf_idf</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">wiki</span><span class="p">[</span><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Barack Obama&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -2207,7 +2197,7 @@ Also check the length of unique_words. It should be 188
 <div class="output_area"><div class="prompt"></div>
 
 <div class="output_html rendered_html output_subarea ">
-<pre>| 0            | 1       | 0.00169288  | 19.763ms     |</pre>
+<pre>| 0            | 1       | 0.00169288  | 15.021ms     |</pre>
 </div>
 
 </div>
@@ -2215,15 +2205,7 @@ Also check the length of unique_words. It should be 188
 <div class="output_area"><div class="prompt"></div>
 
 <div class="output_html rendered_html output_subarea ">
-<pre>| 0            | 44545   | 75.4093     | 1.02s        |</pre>
-</div>
-
-</div>
-
-<div class="output_area"><div class="prompt"></div>
-
-<div class="output_html rendered_html output_subarea ">
-<pre>| Done         |         | 100         | 1.35s        |</pre>
+<pre>| Done         |         | 100         | 393.262ms    |</pre>
 </div>
 
 </div>
@@ -2332,7 +2314,7 @@ Also check the length of unique_words. It should be 188
 <div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">compute_length</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">compute_length</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
     <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">))</span>
 
 <span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;length&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">wiki</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">compute_length</span><span class="p">)</span> 
@@ -2348,7 +2330,7 @@ Also check the length of unique_words. It should be 188
 <div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">nearest_neighbors_euclidean</span> <span class="o">=</span> <span class="n">model_tf_idf</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">wiki</span><span class="p">[</span><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Barack Obama&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">nearest_neighbors_euclidean</span> <span class="o">=</span> <span class="n">model_tf_idf</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">wiki</span><span class="p">[</span><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Barack Obama&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
 <span class="n">nearest_neighbors_euclidean</span> <span class="o">=</span> <span class="n">nearest_neighbors_euclidean</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">wiki</span><span class="p">[[</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;length&#39;</span><span class="p">]],</span> <span class="n">on</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;reference_label&#39;</span><span class="p">:</span><span class="s1">&#39;name&#39;</span><span class="p">})</span>
 </pre></div>
 
@@ -2395,7 +2377,7 @@ Also check the length of unique_words. It should be 188
 <div class="output_area"><div class="prompt"></div>
 
 <div class="output_html rendered_html output_subarea ">
-<pre>| 0            | 1       | 0.00169288  | 19.553ms     |</pre>
+<pre>| 0            | 1       | 0.00169288  | 15.014ms     |</pre>
 </div>
 
 </div>
@@ -2403,15 +2385,7 @@ Also check the length of unique_words. It should be 188
 <div class="output_area"><div class="prompt"></div>
 
 <div class="output_html rendered_html output_subarea ">
-<pre>| 0            | 44545   | 75.4093     | 1.02s        |</pre>
-</div>
-
-</div>
-
-<div class="output_area"><div class="prompt"></div>
-
-<div class="output_html rendered_html output_subarea ">
-<pre>| Done         |         | 100         | 1.35s        |</pre>
+<pre>| Done         |         | 100         | 451.304ms    |</pre>
 </div>
 
 </div>
@@ -2433,7 +2407,7 @@ Also check the length of unique_words. It should be 188
 <div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">nearest_neighbors_euclidean</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s1">&#39;rank&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">nearest_neighbors_euclidean</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s1">&#39;rank&#39;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -2551,7 +2525,7 @@ Also check the length of unique_words. It should be 188
 <div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mf">10.5</span><span class="p">,</span><span class="mf">4.5</span><span class="p">))</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mf">10.5</span><span class="p">,</span><span class="mf">4.5</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;length&#39;</span><span class="p">],</span> <span class="mi">50</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;None&#39;</span><span class="p">,</span> <span class="n">histtype</span><span class="o">=</span><span class="s1">&#39;stepfilled&#39;</span><span class="p">,</span> <span class="n">normed</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
          <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Entire Wikipedia&#39;</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">nearest_neighbors_euclidean</span><span class="p">[</span><span class="s1">&#39;length&#39;</span><span class="p">],</span> <span class="mi">50</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;None&#39;</span><span class="p">,</span> <span class="n">histtype</span><span class="o">=</span><span class="s1">&#39;stepfilled&#39;</span><span class="p">,</span> <span class="n">normed</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
@@ -3164,7 +3138,7 @@ Cosine distances let us compare word distributions of two articles of varying le
 <div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">model2_tf_idf</span> <span class="o">=</span> <span class="n">graphlab</span><span class="o">.</span><span class="n">nearest_neighbors</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">wiki</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="n">features</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;tf_idf&#39;</span><span class="p">],</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">model2_tf_idf</span> <span class="o">=</span> <span class="n">graphlab</span><span class="o">.</span><span class="n">nearest_neighbors</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">wiki</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="n">features</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;tf_idf&#39;</span><span class="p">],</span>
                                                   <span class="n">method</span><span class="o">=</span><span class="s1">&#39;brute_force&#39;</span><span class="p">,</span> <span class="n">distance</span><span class="o">=</span><span class="s1">&#39;cosine&#39;</span><span class="p">)</span>
 </pre></div>
 
@@ -3193,7 +3167,7 @@ Cosine distances let us compare word distributions of two articles of varying le
 <div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">nearest_neighbors_cosine</span> <span class="o">=</span> <span class="n">model2_tf_idf</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">wiki</span><span class="p">[</span><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Barack Obama&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">nearest_neighbors_cosine</span> <span class="o">=</span> <span class="n">model2_tf_idf</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">wiki</span><span class="p">[</span><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Barack Obama&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
 <span class="n">nearest_neighbors_cosine</span> <span class="o">=</span> <span class="n">nearest_neighbors_cosine</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">wiki</span><span class="p">[[</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;length&#39;</span><span class="p">]],</span> <span class="n">on</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;reference_label&#39;</span><span class="p">:</span><span class="s1">&#39;name&#39;</span><span class="p">})</span>
 </pre></div>
 
@@ -3240,7 +3214,7 @@ Cosine distances let us compare word distributions of two articles of varying le
 <div class="output_area"><div class="prompt"></div>
 
 <div class="output_html rendered_html output_subarea ">
-<pre>| 0            | 1       | 0.00169288  | 30.671ms     |</pre>
+<pre>| 0            | 1       | 0.00169288  | 15.015ms     |</pre>
 </div>
 
 </div>
@@ -3248,23 +3222,7 @@ Cosine distances let us compare word distributions of two articles of varying le
 <div class="output_area"><div class="prompt"></div>
 
 <div class="output_html rendered_html output_subarea ">
-<pre>| 0            | 10753   | 18.2035     | 1.03s        |</pre>
-</div>
-
-</div>
-
-<div class="output_area"><div class="prompt"></div>
-
-<div class="output_html rendered_html output_subarea ">
-<pre>| 0            | 55297   | 93.6111     | 2.03s        |</pre>
-</div>
-
-</div>
-
-<div class="output_area"><div class="prompt"></div>
-
-<div class="output_html rendered_html output_subarea ">
-<pre>| Done         |         | 100         | 2.11s        |</pre>
+<pre>| Done         |         | 100         | 360.239ms    |</pre>
 </div>
 
 </div>
@@ -3286,7 +3244,7 @@ Cosine distances let us compare word distributions of two articles of varying le
 <div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">nearest_neighbors_cosine</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s1">&#39;rank&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">nearest_neighbors_cosine</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s1">&#39;rank&#39;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -3405,7 +3363,7 @@ Cosine distances let us compare word distributions of two articles of varying le
 <div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mf">10.5</span><span class="p">,</span><span class="mf">4.5</span><span class="p">))</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mf">10.5</span><span class="p">,</span><span class="mf">4.5</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mf">10.5</span><span class="p">,</span><span class="mf">4.5</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;length&#39;</span><span class="p">],</span> <span class="mi">50</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;None&#39;</span><span class="p">,</span> <span class="n">histtype</span><span class="o">=</span><span class="s1">&#39;stepfilled&#39;</span><span class="p">,</span> <span class="n">normed</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
          <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Entire Wikipedia&#39;</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
@@ -3438,7 +3396,7 @@ Cosine distances let us compare word distributions of two articles of varying le
 
 
 <div class="output_text output_subarea ">
-<pre>&lt;matplotlib.figure.Figure at 0x7fb522d33190&gt;</pre>
+<pre>&lt;matplotlib.figure.Figure at 0x14d41048&gt;</pre>
 </div>
 
 </div>
@@ -4155,7 +4113,7 @@ AElFTkSuQmCC
 <div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">sf</span> <span class="o">=</span> <span class="n">graphlab</span><span class="o">.</span><span class="n">SFrame</span><span class="p">({</span><span class="s1">&#39;text&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;democratic governments control law in response to popular act&#39;</span><span class="p">]})</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">sf</span> <span class="o">=</span> <span class="n">graphlab</span><span class="o">.</span><span class="n">SFrame</span><span class="p">({</span><span class="s1">&#39;text&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;democratic governments control law in response to popular act&#39;</span><span class="p">]})</span>
 <span class="n">sf</span><span class="p">[</span><span class="s1">&#39;word_count&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">graphlab</span><span class="o">.</span><span class="n">text_analytics</span><span class="o">.</span><span class="n">count_words</span><span class="p">(</span><span class="n">sf</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">])</span>
 
 <span class="n">encoder</span> <span class="o">=</span> <span class="n">graphlab</span><span class="o">.</span><span class="n">feature_engineering</span><span class="o">.</span><span class="n">TFIDF</span><span class="p">(</span><span class="n">features</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;word_count&#39;</span><span class="p">],</span> <span class="n">output_column_prefix</span><span class="o">=</span><span class="s1">&#39;tf_idf&#39;</span><span class="p">)</span>
@@ -4183,7 +4141,7 @@ AElFTkSuQmCC
     </tr>
     <tr>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">democratic governments<br>control law in response ...</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">{'control': 1,<br>'democratic': 1, 'in' ...</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">{'control': 1L,<br>'democratic': 1L, 'act': ...</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">{'control':<br>3.721765211295327, ...</td>
     </tr>
 </table>
@@ -4212,7 +4170,7 @@ AElFTkSuQmCC
 <div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">tweet_tf_idf</span> <span class="o">=</span> <span class="n">sf</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;tf_idf.word_count&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">tweet_tf_idf</span> <span class="o">=</span> <span class="n">sf</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;tf_idf.word_count&#39;</span><span class="p">]</span>
 <span class="n">tweet_tf_idf</span>
 </pre></div>
 
@@ -4250,7 +4208,7 @@ AElFTkSuQmCC
 <div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">obama</span> <span class="o">=</span> <span class="n">wiki</span><span class="p">[</span><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Barack Obama&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">obama</span> <span class="o">=</span> <span class="n">wiki</span><span class="p">[</span><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Barack Obama&#39;</span><span class="p">]</span>
 <span class="n">obama</span>
 </pre></div>
 
@@ -4277,7 +4235,7 @@ AElFTkSuQmCC
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">&lt;http://dbpedia.org/resou<br>rce/Barack_Obama&gt; ...</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">Barack Obama</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">barack hussein obama ii<br>brk husen bm born august ...</td>
-        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">{'operations': 1,<br>'represent': 1, 'offi ...</td>
+        <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">{'operations': 1L,<br>'represent': 1L, ...</td>
         <td style="padding-left: 1em; padding-right: 1em; text-align: center; vertical-align: top">1</td>
     </tr>
 </table>
@@ -4316,7 +4274,7 @@ AElFTkSuQmCC
 <div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">obama_tf_idf</span> <span class="o">=</span> <span class="n">obama</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;tf_idf&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">obama_tf_idf</span> <span class="o">=</span> <span class="n">obama</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;tf_idf&#39;</span><span class="p">]</span>
 <span class="n">graphlab</span><span class="o">.</span><span class="n">toolkits</span><span class="o">.</span><span class="n">distances</span><span class="o">.</span><span class="n">cosine</span><span class="p">(</span><span class="n">obama_tf_idf</span><span class="p">,</span> <span class="n">tweet_tf_idf</span><span class="p">)</span>
 </pre></div>
 
@@ -4332,7 +4290,7 @@ AElFTkSuQmCC
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>0.7059183777794328</pre>
+<pre>0.7059183777794327</pre>
 </div>
 
 </div>
@@ -4356,7 +4314,7 @@ AElFTkSuQmCC
 <div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">model2_tf_idf</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">obama</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">model2_tf_idf</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">obama</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -4402,7 +4360,7 @@ AElFTkSuQmCC
 <div class="output_area"><div class="prompt"></div>
 
 <div class="output_html rendered_html output_subarea ">
-<pre>| 0            | 1       | 0.00169288  | 27.352ms     |</pre>
+<pre>| 0            | 1       | 0.00169288  | 10.007ms     |</pre>
 </div>
 
 </div>
@@ -4410,15 +4368,7 @@ AElFTkSuQmCC
 <div class="output_area"><div class="prompt"></div>
 
 <div class="output_html rendered_html output_subarea ">
-<pre>| 0            | 44090   | 74.639      | 1.02s        |</pre>
-</div>
-
-</div>
-
-<div class="output_area"><div class="prompt"></div>
-
-<div class="output_html rendered_html output_subarea ">
-<pre>| Done         |         | 100         | 1.37s        |</pre>
+<pre>| Done         |         | 100         | 360.238ms    |</pre>
 </div>
 
 </div>
