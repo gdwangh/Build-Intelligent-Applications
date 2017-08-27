@@ -228,10 +228,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">graphlab</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">graphlab</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">sys</span>
@@ -246,28 +246,6 @@ div#notebook {
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>[INFO] graphlab.cython.cy_server: GraphLab Create v2.1 started. Logging: /tmp/graphlab_server_1486653932.log
-INFO:graphlab.cython.cy_server:GraphLab Create v2.1 started. Logging: /tmp/graphlab_server_1486653932.log
-</pre>
-</div>
-</div>
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>This non-commercial license of GraphLab Create for academic use is assigned to gdwangh@189.cn and will expire on February 23, 2017.
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -293,23 +271,44 @@ INFO:graphlab.cython.cy_server:GraphLab Create v2.1 started. Logging: /tmp/graph
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">wiki</span> <span class="o">=</span> <span class="n">graphlab</span><span class="o">.</span><span class="n">SFrame</span><span class="p">(</span><span class="s1">&#39;people_wiki.gl/&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">wiki</span> <span class="o">=</span> <span class="n">graphlab</span><span class="o">.</span><span class="n">SFrame</span><span class="p">(</span><span class="s1">&#39;people_wiki.gl/&#39;</span><span class="p">)</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>This non-commercial license of GraphLab Create for academic use is assigned to gdwangh@189.cn and will expire on August 23, 2018.
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>[INFO] graphlab.cython.cy_server: GraphLab Create v2.1 started. Logging: C:\Users\wh\AppData\Local\Temp\graphlab_server_1503758359.log.0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;tf_idf&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">graphlab</span><span class="o">.</span><span class="n">text_analytics</span><span class="o">.</span><span class="n">tf_idf</span><span class="p">(</span><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">])</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;tf_idf&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">graphlab</span><span class="o">.</span><span class="n">text_analytics</span><span class="o">.</span><span class="n">tf_idf</span><span class="p">(</span><span class="n">wiki</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">])</span>
 </pre></div>
 
 </div>
@@ -330,10 +329,10 @@ INFO:graphlab.cython.cy_server:GraphLab Create v2.1 started. Logging: /tmp/graph
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">sframe_to_scipy</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">column_name</span><span class="p">):</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">sframe_to_scipy</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">column_name</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Convert a dictionary column of an SFrame into a sparse matrix format where</span>
 <span class="sd">    each (row_id, column_id, value) triple corresponds to the value of</span>
@@ -382,10 +381,10 @@ INFO:graphlab.cython.cy_server:GraphLab Create v2.1 started. Logging: /tmp/graph
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c1"># The conversion will take about a minute or two.</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># The conversion will take about a minute or two.</span>
 <span class="n">tf_idf</span><span class="p">,</span> <span class="n">map_index_to_word</span> <span class="o">=</span> <span class="n">sframe_to_scipy</span><span class="p">(</span><span class="n">wiki</span><span class="p">,</span> <span class="s1">&#39;tf_idf&#39;</span><span class="p">)</span>
 </pre></div>
 
@@ -396,10 +395,10 @@ INFO:graphlab.cython.cy_server:GraphLab Create v2.1 started. Logging: /tmp/graph
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">tf_idf</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">tf_idf</span>
 </pre></div>
 
 </div>
@@ -410,7 +409,7 @@ INFO:graphlab.cython.cy_server:GraphLab Create v2.1 started. Logging: /tmp/graph
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[6]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[7]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -468,10 +467,10 @@ INFO:graphlab.cython.cy_server:GraphLab Create v2.1 started. Logging: /tmp/graph
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">normalize</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">normalize</span>
 <span class="n">tf_idf</span> <span class="o">=</span> <span class="n">normalize</span><span class="p">(</span><span class="n">tf_idf</span><span class="p">)</span>
 </pre></div>
 
@@ -502,10 +501,10 @@ INFO:graphlab.cython.cy_server:GraphLab Create v2.1 started. Logging: /tmp/graph
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">get_initial_centroids</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">get_initial_centroids</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;Randomly choose k data points as initial centroids&#39;&#39;&#39;</span>
     <span class="k">if</span> <span class="n">seed</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span> <span class="c1"># useful for obtaining consistent results</span>
         <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">seed</span><span class="p">)</span>
@@ -582,10 +581,10 @@ centroids = revise_centroids(data, k, cluster_assignment)</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">pairwise_distances</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">pairwise_distances</span>
 
 <span class="c1"># Get the TF-IDF vectors for documents 100 through 102.</span>
 <span class="n">queries</span> <span class="o">=</span> <span class="n">tf_idf</span><span class="p">[</span><span class="mi">100</span><span class="p">:</span><span class="mi">102</span><span class="p">,:]</span>
@@ -643,10 +642,10 @@ centroids = revise_centroids(data, k, cluster_assignment)</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c1"># Students should write code here</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Students should write code here</span>
 <span class="n">centroids</span> <span class="o">=</span> <span class="n">tf_idf</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span> <span class="p">:]</span>
 <span class="n">distances</span> <span class="o">=</span> <span class="n">pairwise_distances</span><span class="p">(</span><span class="n">tf_idf</span><span class="p">,</span> <span class="n">centroids</span><span class="p">,</span> <span class="n">metric</span><span class="o">=</span><span class="s1">&#39;euclidean&#39;</span><span class="p">)</span>
 <span class="n">dist</span> <span class="o">=</span> <span class="n">distances</span><span class="p">[</span><span class="mi">430</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
@@ -659,10 +658,10 @@ centroids = revise_centroids(data, k, cluster_assignment)</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="sd">&#39;&#39;&#39;Test cell&#39;&#39;&#39;</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="sd">&#39;&#39;&#39;Test cell&#39;&#39;&#39;</span>
 <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">dist</span><span class="p">,</span> <span class="n">pairwise_distances</span><span class="p">(</span><span class="n">tf_idf</span><span class="p">[</span><span class="mi">430</span><span class="p">,:],</span> <span class="n">tf_idf</span><span class="p">[</span><span class="mi">1</span><span class="p">,:])):</span>
     <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Pass&#39;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
@@ -702,10 +701,10 @@ centroids = revise_centroids(data, k, cluster_assignment)</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c1"># Students should write code here</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Students should write code here</span>
 <span class="n">closest_cluster</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">distances</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 
@@ -716,10 +715,10 @@ centroids = revise_centroids(data, k, cluster_assignment)</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="sd">&#39;&#39;&#39;Test cell&#39;&#39;&#39;</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="sd">&#39;&#39;&#39;Test cell&#39;&#39;&#39;</span>
 <span class="n">reference</span> <span class="o">=</span> <span class="p">[</span><span class="nb">list</span><span class="p">(</span><span class="n">row</span><span class="p">)</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">row</span><span class="p">))</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">distances</span><span class="p">]</span>
 <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">closest_cluster</span><span class="p">,</span> <span class="n">reference</span><span class="p">):</span>
     <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Pass&#39;</span><span class="p">)</span>
@@ -758,10 +757,10 @@ centroids = revise_centroids(data, k, cluster_assignment)</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c1"># Students should write code here</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Students should write code here</span>
 <span class="n">centroids</span> <span class="o">=</span> <span class="n">tf_idf</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span> <span class="p">:]</span>
 <span class="n">distances</span> <span class="o">=</span> <span class="n">pairwise_distances</span><span class="p">(</span><span class="n">tf_idf</span><span class="p">,</span> <span class="n">centroids</span><span class="p">,</span> <span class="n">metric</span><span class="o">=</span><span class="s1">&#39;euclidean&#39;</span><span class="p">)</span>
 <span class="n">cluster_assignment</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">distances</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -774,10 +773,10 @@ centroids = revise_centroids(data, k, cluster_assignment)</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">cluster_assignment</span><span class="p">)</span><span class="o">==</span><span class="mi">59071</span> <span class="ow">and</span> \
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">cluster_assignment</span><span class="p">)</span><span class="o">==</span><span class="mi">59071</span> <span class="ow">and</span> \
    <span class="n">np</span><span class="o">.</span><span class="n">array_equal</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">bincount</span><span class="p">(</span><span class="n">cluster_assignment</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">23061</span><span class="p">,</span> <span class="mi">10086</span><span class="p">,</span> <span class="mi">25924</span><span class="p">])):</span>
     <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Pass&#39;</span><span class="p">)</span> <span class="c1"># count number of data points for each cluster</span>
 <span class="k">else</span><span class="p">:</span>
@@ -815,10 +814,10 @@ centroids = revise_centroids(data, k, cluster_assignment)</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">assign_clusters</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">centroids</span><span class="p">):</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">assign_clusters</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">centroids</span><span class="p">):</span>
     
     <span class="c1"># Compute distances between each data point and the set of centroids:</span>
     <span class="c1"># Fill in the blank (RHS only)</span>
@@ -849,10 +848,10 @@ centroids = revise_centroids(data, k, cluster_assignment)</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">assign_clusters</span><span class="p">(</span><span class="n">tf_idf</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">100</span><span class="p">:</span><span class="mi">10</span><span class="p">],</span> <span class="n">tf_idf</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">8</span><span class="p">:</span><span class="mi">2</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">])):</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">assign_clusters</span><span class="p">(</span><span class="n">tf_idf</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">100</span><span class="p">:</span><span class="mi">10</span><span class="p">],</span> <span class="n">tf_idf</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">8</span><span class="p">:</span><span class="mi">2</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">])):</span>
     <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Pass&#39;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Check your code again.&#39;</span><span class="p">)</span>
@@ -920,10 +919,10 @@ centroids = revise_centroids(data, k, cluster_assignment)</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">2.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">],</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">2.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">],</span>
                  <span class="p">[</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">],</span>
                  <span class="p">[</span><span class="mf">2.</span><span class="p">,</span> <span class="mf">2.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">]])</span>
 <span class="n">centroids</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.</span><span class="p">],</span>
@@ -947,10 +946,10 @@ centroids = revise_centroids(data, k, cluster_assignment)</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">cluster_assignment</span> <span class="o">=</span> <span class="n">assign_clusters</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">centroids</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">cluster_assignment</span> <span class="o">=</span> <span class="n">assign_clusters</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">centroids</span><span class="p">)</span>
 <span class="k">print</span> <span class="n">cluster_assignment</span>
 </pre></div>
 
@@ -985,10 +984,10 @@ centroids = revise_centroids(data, k, cluster_assignment)</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">cluster_assignment</span><span class="o">==</span><span class="mi">1</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">cluster_assignment</span><span class="o">==</span><span class="mi">1</span>
 </pre></div>
 
 </div>
@@ -999,7 +998,7 @@ centroids = revise_centroids(data, k, cluster_assignment)</code></pre>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[20]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[21]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -1024,10 +1023,10 @@ centroids = revise_centroids(data, k, cluster_assignment)</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">cluster_assignment</span><span class="o">==</span><span class="mi">0</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">cluster_assignment</span><span class="o">==</span><span class="mi">0</span>
 </pre></div>
 
 </div>
@@ -1038,7 +1037,7 @@ centroids = revise_centroids(data, k, cluster_assignment)</code></pre>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[21]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[22]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -1064,10 +1063,10 @@ centroids = revise_centroids(data, k, cluster_assignment)</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">data</span><span class="p">[</span><span class="n">cluster_assignment</span><span class="o">==</span><span class="mi">1</span><span class="p">]</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="n">cluster_assignment</span><span class="o">==</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -1078,7 +1077,7 @@ centroids = revise_centroids(data, k, cluster_assignment)</code></pre>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[22]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[23]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -1104,10 +1103,10 @@ centroids = revise_centroids(data, k, cluster_assignment)</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">data</span><span class="p">[</span><span class="n">cluster_assignment</span><span class="o">==</span><span class="mi">0</span><span class="p">]</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="n">cluster_assignment</span><span class="o">==</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -1118,7 +1117,7 @@ centroids = revise_centroids(data, k, cluster_assignment)</code></pre>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[23]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[24]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -1146,10 +1145,10 @@ centroids = revise_centroids(data, k, cluster_assignment)</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">data</span><span class="p">[</span><span class="n">cluster_assignment</span><span class="o">==</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="n">cluster_assignment</span><span class="o">==</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1160,7 +1159,7 @@ centroids = revise_centroids(data, k, cluster_assignment)</code></pre>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[24]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[25]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -1185,10 +1184,10 @@ centroids = revise_centroids(data, k, cluster_assignment)</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">revise_centroids</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">cluster_assignment</span><span class="p">):</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">revise_centroids</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">cluster_assignment</span><span class="p">):</span>
     <span class="n">new_centroids</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
         <span class="c1"># Select all data points that belong to cluster i. Fill in the blank (RHS only)</span>
@@ -1221,10 +1220,10 @@ centroids = revise_centroids(data, k, cluster_assignment)</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">result</span> <span class="o">=</span> <span class="n">revise_centroids</span><span class="p">(</span><span class="n">tf_idf</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">100</span><span class="p">:</span><span class="mi">10</span><span class="p">],</span> <span class="mi">3</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]))</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">revise_centroids</span><span class="p">(</span><span class="n">tf_idf</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">100</span><span class="p">:</span><span class="mi">10</span><span class="p">],</span> <span class="mi">3</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]))</span>
 <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">tf_idf</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">60</span><span class="p">]]</span><span class="o">.</span><span class="n">toarray</span><span class="p">(),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span> <span class="ow">and</span> \
    <span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">tf_idf</span><span class="p">[[</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">90</span><span class="p">]]</span><span class="o">.</span><span class="n">toarray</span><span class="p">(),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span>   <span class="ow">and</span> \
    <span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">tf_idf</span><span class="p">[[</span><span class="mi">50</span><span class="p">,</span><span class="mi">70</span><span class="p">,</span><span class="mi">80</span><span class="p">]]</span><span class="o">.</span><span class="n">toarray</span><span class="p">(),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)):</span>
@@ -1277,10 +1276,10 @@ The smaller the distances, the more homogeneous the clusters are. In other words
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">compute_heterogeneity</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">centroids</span><span class="p">,</span> <span class="n">cluster_assignment</span><span class="p">):</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">compute_heterogeneity</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">centroids</span><span class="p">,</span> <span class="n">cluster_assignment</span><span class="p">):</span>
     
     <span class="n">heterogeneity</span> <span class="o">=</span> <span class="mf">0.0</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
@@ -1314,10 +1313,10 @@ The smaller the distances, the more homogeneous the clusters are. In other words
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">compute_heterogeneity</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">centroids</span><span class="p">,</span> <span class="n">cluster_assignment</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">compute_heterogeneity</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">centroids</span><span class="p">,</span> <span class="n">cluster_assignment</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1328,7 +1327,7 @@ The smaller the distances, the more homogeneous the clusters are. In other words
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[28]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[29]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -1367,10 +1366,10 @@ The smaller the distances, the more homogeneous the clusters are. In other words
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c1"># Fill in the blanks</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Fill in the blanks</span>
 <span class="k">def</span> <span class="nf">kmeans</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">initial_centroids</span><span class="p">,</span> <span class="n">maxiter</span><span class="p">,</span> <span class="n">record_heterogeneity</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;This function runs k-means on given data and initial set of centroids.</span>
 <span class="sd">       maxiter: maximum number of iterations to run.</span>
@@ -1444,10 +1443,10 @@ The smaller the distances, the more homogeneous the clusters are. In other words
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">plot_heterogeneity</span><span class="p">(</span><span class="n">heterogeneity</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">plot_heterogeneity</span><span class="p">(</span><span class="n">heterogeneity</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">heterogeneity</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;# Iterations&#39;</span><span class="p">)</span>
@@ -1474,10 +1473,10 @@ The smaller the distances, the more homogeneous the clusters are. In other words
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">k</span> <span class="o">=</span> <span class="mi">3</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">k</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="n">heterogeneity</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">initial_centroids</span> <span class="o">=</span> <span class="n">get_initial_centroids</span><span class="p">(</span><span class="n">tf_idf</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">centroids</span><span class="p">,</span> <span class="n">cluster_assignment</span> <span class="o">=</span> <span class="n">kmeans</span><span class="p">(</span><span class="n">tf_idf</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">initial_centroids</span><span class="p">,</span> <span class="n">maxiter</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span>
@@ -2137,10 +2136,10 @@ rkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">np</span><span class="o">.</span><span class="n">bincount</span><span class="p">(</span><span class="n">cluster_assignment</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">bincount</span><span class="p">(</span><span class="n">cluster_assignment</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -2151,11 +2150,11 @@ rkJggg==
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[32]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[33]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([19595, 10427, 29049])</pre>
+<pre>array([19595, 10427, 29049], dtype=int64)</pre>
 </div>
 
 </div>
@@ -2187,10 +2186,10 @@ rkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">k</span> <span class="o">=</span> <span class="mi">10</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">k</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">heterogeneity</span> <span class="o">=</span> <span class="p">{}</span>
 <span class="kn">import</span> <span class="nn">time</span>
 <span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
@@ -2223,7 +2222,7 @@ seed=060000, heterogeneity=57466.97925
 seed=080000, heterogeneity=57494.92990
 seed=100000, heterogeneity=57484.42210
 seed=120000, heterogeneity=57554.62410
-222.823934793
+368.210999966
 </pre>
 </div>
 </div>
@@ -2254,10 +2253,10 @@ seed=120000, heterogeneity=57554.62410
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">k</span> <span class="o">=</span> <span class="mi">10</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">k</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="kn">import</span> <span class="nn">time</span>
 <span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">seed</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">20000</span><span class="p">,</span> <span class="mi">40000</span><span class="p">,</span> <span class="mi">60000</span><span class="p">,</span> <span class="mi">80000</span><span class="p">,</span> <span class="mi">100000</span><span class="p">,</span> <span class="mi">120000</span><span class="p">]:</span>
@@ -2265,7 +2264,7 @@ seed=120000, heterogeneity=57554.62410
     <span class="n">centroids</span><span class="p">,</span> <span class="n">cluster_assignment</span> <span class="o">=</span> <span class="n">kmeans</span><span class="p">(</span><span class="n">tf_idf</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">initial_centroids</span><span class="p">,</span> <span class="n">maxiter</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span>
                                            <span class="n">record_heterogeneity</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
     <span class="c1"># To save time, compute heterogeneity only once in the end</span>
-    <span class="k">print</span> <span class="s1">&#39;seed={0:06d}, # of member data points of clusters:&#39;</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">bincount</span><span class="p">(</span><span class="n">cluster_assignment</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;seed=</span><span class="si">%06d</span><span class="s1">,max # of member data points of clusters:</span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">seed</span><span class="p">,</span> <span class="nb">max</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">bincount</span><span class="p">(</span><span class="n">cluster_assignment</span><span class="p">))))</span>
     <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
 <span class="n">end</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
 <span class="k">print</span><span class="p">(</span><span class="n">end</span><span class="o">-</span><span class="n">start</span><span class="p">)</span>
@@ -2281,14 +2280,14 @@ seed=120000, heterogeneity=57554.62410
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>seed={0:06d}, # of member data points of clusters: [18047  3824  5671  6983  1492  1730  3882  3449  7139  6854]
-seed={0:06d}, # of member data points of clusters: [ 3142   768  3566  2277 15779  7278  6146  7964  6666  5485]
-seed={0:06d}, # of member data points of clusters: [ 5551  6623   186  2999  8487  3893  6807  2921  3472 18132]
-seed={0:06d}, # of member data points of clusters: [ 3014  3089  6681  3856  8080  7222  3424   424  5381 17900]
-seed={0:06d}, # of member data points of clusters: [17582  1785  7215  3314  6285   809  5930  6791  5536  3824]
-seed={0:06d}, # of member data points of clusters: [ 6618  1337  6191  2890 16969  4983  5242  3892  5562  5387]
-seed={0:06d}, # of member data points of clusters: [ 6118  5841  4964  8423  4302  3183 16481  1608  5524  2627]
-219.979711056
+<pre>seed=000000,max # of member data points of clusters:18047
+seed=020000,max # of member data points of clusters:15779
+seed=040000,max # of member data points of clusters:18132
+seed=060000,max # of member data points of clusters:17900
+seed=080000,max # of member data points of clusters:17582
+seed=100000,max # of member data points of clusters:16969
+seed=120000,max # of member data points of clusters:16481
+355.874000072
 </pre>
 </div>
 </div>
@@ -2309,10 +2308,10 @@ seed={0:06d}, # of member data points of clusters: [ 6118  5841  4964  8423  430
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">smart_initialize</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">smart_initialize</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;Use k-means++ to initialize a good set of centroids&#39;&#39;&#39;</span>
     <span class="k">if</span> <span class="n">seed</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span> <span class="c1"># useful for obtaining consistent results</span>
         <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">seed</span><span class="p">)</span>
@@ -2355,10 +2354,10 @@ seed={0:06d}, # of member data points of clusters: [ 6118  5841  4964  8423  430
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">k</span> <span class="o">=</span> <span class="mi">10</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">k</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">heterogeneity_smart</span> <span class="o">=</span> <span class="p">{}</span>
 <span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">seed</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">20000</span><span class="p">,</span> <span class="mi">40000</span><span class="p">,</span> <span class="mi">60000</span><span class="p">,</span> <span class="mi">80000</span><span class="p">,</span> <span class="mi">100000</span><span class="p">,</span> <span class="mi">120000</span><span class="p">]:</span>
@@ -2390,7 +2389,7 @@ seed=060000, heterogeneity=57530.43659
 seed=080000, heterogeneity=57454.51852
 seed=100000, heterogeneity=57471.56674
 seed=120000, heterogeneity=57523.28839
-264.447613001
+444.23300004
 </pre>
 </div>
 </div>
@@ -2412,10 +2411,10 @@ seed=120000, heterogeneity=57523.28839
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">boxplot</span><span class="p">([</span><span class="n">heterogeneity</span><span class="o">.</span><span class="n">values</span><span class="p">(),</span> <span class="n">heterogeneity_smart</span><span class="o">.</span><span class="n">values</span><span class="p">()],</span> <span class="n">vert</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;k-means&#39;</span><span class="p">,</span> <span class="s1">&#39;k-means++&#39;</span><span class="p">])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">})</span>
@@ -2581,10 +2580,10 @@ zwAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">kmeans_multiple_runs</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">maxiter</span><span class="p">,</span> <span class="n">num_runs</span><span class="p">,</span> <span class="n">seed_list</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">kmeans_multiple_runs</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">maxiter</span><span class="p">,</span> <span class="n">num_runs</span><span class="p">,</span> <span class="n">seed_list</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
     <span class="n">heterogeneity</span> <span class="o">=</span> <span class="p">{}</span>
     
     <span class="n">min_heterogeneity_achieved</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;inf&#39;</span><span class="p">)</span>
@@ -2669,10 +2668,10 @@ zwAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c1">#def plot_k_vs_heterogeneity(k_values, heterogeneity_values):</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#def plot_k_vs_heterogeneity(k_values, heterogeneity_values):</span>
 <span class="c1">#    plt.figure(figsize=(7,4))</span>
 <span class="c1">#    plt.plot(k_values, heterogeneity_values, linewidth=4)</span>
 <span class="c1">#    plt.xlabel(&#39;K&#39;)</span>
@@ -2720,10 +2719,10 @@ zwAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">plot_k_vs_heterogeneity</span><span class="p">(</span><span class="n">k_values</span><span class="p">,</span> <span class="n">heterogeneity_values</span><span class="p">):</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">plot_k_vs_heterogeneity</span><span class="p">(</span><span class="n">k_values</span><span class="p">,</span> <span class="n">heterogeneity_values</span><span class="p">):</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">k_values</span><span class="p">,</span> <span class="n">heterogeneity_values</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;K&#39;</span><span class="p">)</span>
@@ -3150,10 +3149,10 @@ iAFgkRADwCIhBoBFQgwAi4QYABb9BRqA3nQxM4QqAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">visualize_document_clusters</span><span class="p">(</span><span class="n">wiki</span><span class="p">,</span> <span class="n">tf_idf</span><span class="p">,</span> <span class="n">centroids</span><span class="p">,</span> <span class="n">cluster_assignment</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">map_index_to_word</span><span class="p">,</span> <span class="n">display_content</span><span class="o">=</span><span class="bp">True</span><span class="p">):</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">visualize_document_clusters</span><span class="p">(</span><span class="n">wiki</span><span class="p">,</span> <span class="n">tf_idf</span><span class="p">,</span> <span class="n">centroids</span><span class="p">,</span> <span class="n">cluster_assignment</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">map_index_to_word</span><span class="p">,</span> <span class="n">display_content</span><span class="o">=</span><span class="bp">True</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;wiki: original dataframe</span>
 <span class="sd">       tf_idf: data matrix, sparse matrix format</span>
 <span class="sd">       map_index_to_word: SFrame specifying the mapping betweeen words and column indices</span>
@@ -3203,12 +3202,13 @@ iAFgkRADwCIhBoBFQgwAi4QYABb9BRqA3nQxM4QqAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="sd">&#39;&#39;&#39;Notice the extra pairs of parentheses for centroids and cluster_assignment.</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="sd">&#39;&#39;&#39;Notice the extra pairs of parentheses for centroids and cluster_assignment.</span>
 <span class="sd">   The centroid and cluster_assignment are still inside the npz file,</span>
 <span class="sd">   and we need to explicitly indicate when to load them into memory.&#39;&#39;&#39;</span>
+
 <span class="n">visualize_document_clusters</span><span class="p">(</span><span class="n">wiki</span><span class="p">,</span> <span class="n">tf_idf</span><span class="p">,</span> <span class="n">centroids</span><span class="p">[</span><span class="mi">2</span><span class="p">](),</span> <span class="n">cluster_assignment</span><span class="p">[</span><span class="mi">2</span><span class="p">](),</span> <span class="mi">2</span><span class="p">,</span> <span class="n">map_index_to_word</span><span class="p">)</span>
 </pre></div>
 
@@ -3317,10 +3317,10 @@ Cluster 1     league:0.040 season:0.036 team:0.029 football:0.029 played:0.028
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">k</span> <span class="o">=</span> <span class="mi">10</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">k</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">visualize_document_clusters</span><span class="p">(</span><span class="n">wiki</span><span class="p">,</span> <span class="n">tf_idf</span><span class="p">,</span> <span class="n">centroids</span><span class="p">[</span><span class="n">k</span><span class="p">](),</span> <span class="n">cluster_assignment</span><span class="p">[</span><span class="n">k</span><span class="p">](),</span> <span class="n">k</span><span class="p">,</span> <span class="n">map_index_to_word</span><span class="p">)</span>
 </pre></div>
 
@@ -3708,10 +3708,10 @@ Cluster 9     party:0.028 election:0.025 minister:0.025 served:0.021 law:0.019
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">np</span><span class="o">.</span><span class="n">bincount</span><span class="p">(</span><span class="n">cluster_assignment</span><span class="p">[</span><span class="mi">10</span><span class="p">]())</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">bincount</span><span class="p">(</span><span class="n">cluster_assignment</span><span class="p">[</span><span class="mi">10</span><span class="p">]())</span>
 </pre></div>
 
 </div>
@@ -3722,11 +3722,11 @@ Cluster 9     party:0.028 election:0.025 minister:0.025 served:0.021 law:0.019
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[44]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[45]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([17602,  3415,  3535,  1736,  6445,  2552,  7106,  7155,   599,  8926])</pre>
+<pre>array([17602,  3415,  3535,  1736,  6445,  2552,  7106,  7155,   599,  8926], dtype=int64)</pre>
 </div>
 
 </div>
@@ -3791,10 +3791,10 @@ Cluster 9     party:0.028 election:0.025 minister:0.025 served:0.021 law:0.019
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">visualize_document_clusters</span><span class="p">(</span><span class="n">wiki</span><span class="p">,</span> <span class="n">tf_idf</span><span class="p">,</span> <span class="n">centroids</span><span class="p">[</span><span class="mi">25</span><span class="p">](),</span> <span class="n">cluster_assignment</span><span class="p">[</span><span class="mi">25</span><span class="p">](),</span> <span class="mi">25</span><span class="p">,</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">visualize_document_clusters</span><span class="p">(</span><span class="n">wiki</span><span class="p">,</span> <span class="n">tf_idf</span><span class="p">,</span> <span class="n">centroids</span><span class="p">[</span><span class="mi">25</span><span class="p">](),</span> <span class="n">cluster_assignment</span><span class="p">[</span><span class="mi">25</span><span class="p">](),</span> <span class="mi">25</span><span class="p">,</span>
                             <span class="n">map_index_to_word</span><span class="p">,</span> <span class="n">display_content</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span> <span class="c1"># turn off text for brevity</span>
 </pre></div>
 
@@ -3908,10 +3908,10 @@ Cluster 24     tour:0.256 pga:0.213 golf:0.142 open:0.073 golfer:0.062
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">k</span><span class="o">=</span><span class="mi">100</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">k</span><span class="o">=</span><span class="mi">100</span>
 <span class="n">visualize_document_clusters</span><span class="p">(</span><span class="n">wiki</span><span class="p">,</span> <span class="n">tf_idf</span><span class="p">,</span> <span class="n">centroids</span><span class="p">[</span><span class="n">k</span><span class="p">](),</span> <span class="n">cluster_assignment</span><span class="p">[</span><span class="n">k</span><span class="p">](),</span> <span class="n">k</span><span class="p">,</span>
                             <span class="n">map_index_to_word</span><span class="p">,</span> <span class="n">display_content</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
 <span class="c1"># turn off text for brevity -- turn it on if you are curious ;)</span>
@@ -4164,11 +4164,10 @@ Cluster 99     army:0.081 commander:0.080 command:0.076 military:0.076 staff:0.0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="nb">sum</span><span class="p">(</span><span class="n">cluster_assignment</span><span class="p">[</span><span class="mi">100</span><span class="p">]()</span><span class="o">&lt;</span><span class="mi">236</span><span class="p">)</span>
-<span class="n">cluster_assignment</span><span class="p">[</span><span class="mi">100</span><span class="p">]()</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="nb">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">bincount</span><span class="p">(</span><span class="n">cluster_assignment</span><span class="p">[</span><span class="mi">100</span><span class="p">]())</span><span class="o">&lt;</span><span class="mi">236</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -4181,18 +4180,9 @@ Cluster 99     army:0.081 commander:0.080 command:0.076 military:0.076 staff:0.0
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>59071
+<pre>29
 </pre>
 </div>
-</div>
-
-<div class="output_area"><div class="prompt output_prompt">Out[47]:</div>
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([28, 80, 58, ..., 44, 90, 57])</pre>
-</div>
-
 </div>
 
 </div>
